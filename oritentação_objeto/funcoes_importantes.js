@@ -4,7 +4,7 @@ const pessoa = {
     peso: 13
 }
 
-// Traz apenas as chaves dos valores do objeto pessoa
+// Traz apenas as chaves do objeto pessoa
 console.log(Object.keys(pessoa));
 // Traz apenas os valores do objeto pessoa
 console.log(Object.values(pessoa));
@@ -22,6 +22,7 @@ Object.defineProperty(pessoa, 'dataNascimento', {
     writable: false,
     value: '19/10/1993'
 })
+
 pessoa.dataNascimento = '10/10/1998'
 console.log(pessoa.dataNascimento);
 
